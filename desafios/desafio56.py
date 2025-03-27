@@ -1,23 +1,19 @@
 totidade = 0
-totmulher = 0
 homemvelho = 0
 nomemaisvelho = ''
+totmulher = 0
 for p in range(1, 5):
     print('----- {}ª Pessoa -----'.format(p))
     nome = str(input('Nome: '))
     idade = int(input('Idade: '))
-    if p == 1:
-        totidade = idade
-    else:
-        totidade += idade
     sexo = str(input('[M/F]: ')).upper()
+    totidade += idade
     if sexo == 'F'and idade < 20:
-     totmulher += 1
-    
+       totmulher += 1
     if sexo == 'M' and idade > homemvelho:
         homemvelho = idade
-        nomemaisvelho = nome
-     
+        nomemaisvelho = nome  
+        
 mediaidade = totidade/4
 print('-------------------------------------------------------------')
 print('A média de idade do grupo é de {} anos.'.format(mediaidade))
