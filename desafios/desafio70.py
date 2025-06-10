@@ -1,6 +1,5 @@
 totalcompra = maisDeMil = contProduto = 0
-nomeMaisBarato = ' '
-nomeMaisCaro = ' '
+nomeMaisCaro = nomeMaisBarato = ' '
 print('--------LOJA SUPER BARATÃO--------')
 while True:
     produto = str(input('Nome do produto: '))
@@ -22,8 +21,7 @@ while True:
         if preço < maisBarato:
             maisBarato = preço
             nomeMaisBarato = produto
-    
-    
+          
     resp = ' '
     while resp not in 'SN':
         resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
