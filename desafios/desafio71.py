@@ -9,12 +9,11 @@ while True:
     resto = valor % 50 #Resto da divisão
     
     cedulas_10 = resto // 10 #Quantas vezes 10 cabe no restante da divisão anterior
-    resto = resto % 10 #Reto da divisão
+    resto = resto % 10 #Resto da divisão
     
     cedulas_1 = resto
     break
 print(f'Total de {cedulas_50:.0f} cédulas de R$50')
 print(f'Total de {cedulas_10:.0f} cédulas de R$10')
 print(f'Total de {cedulas_1:.0f} cédulas de R$1')
-    
     
