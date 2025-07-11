@@ -1,4 +1,3 @@
-
 print('='*20)
 print('   BANCO FERRAZ')
 print('='*20)
