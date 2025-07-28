@@ -15,6 +15,5 @@ while True:
         resp = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
     if resp == 'N':
         break
-
 print('Fim do programa! ')
     
